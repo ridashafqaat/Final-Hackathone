@@ -27,7 +27,7 @@
             left: 50%;
         }
 
-        .container-8 form {
+        .container-8 .form-login {
             width: 23.75em;
             height: 20.75em;
             background-color: #ffffff;
@@ -42,14 +42,14 @@
             border-radius: 0.5em;
         }
 
-        .container-8 form label {
+        .container-8 .form-login label {
             display: block;
             margin-bottom: 0.2em;
             font-weight: 600;
             color: #2e0d30;
         }
 
-        .container-8 form input {
+        .container-8 .form-login input {
             font-size: 0.95em;
             font-weight: 400;
             color: #3f3554;
@@ -59,7 +59,7 @@
             outline: none;
         }
 
-        form textarea {
+        .form-login textarea {
             font-size: 0.95em;
             font-weight: 400;
             color: #3f3554;
@@ -69,20 +69,20 @@
             outline: none;
         }
 
-        form textarea:focus {
+        .form-login textarea:focus {
             border-color: #f4c531;
         }
 
 
-        form input:focus {
+        .form-login input:focus {
             border-color: #f4c531;
         }
 
-        form input:not(:last-child) {
+        .form-login input:not(:last-child) {
             margin-bottom: 0.9em;
         }
 
-        form button {
+        .form-login button {
             font-size: 0.95em;
             padding: 0.8em 0;
             border-radius: 2em;
@@ -339,8 +339,8 @@
                             <i class="fa-solid fa-shirt"><a href="#"></a></i>Products <i
                                 class="fa-solid fa-chevron-down"></i>
                             <ul>
-                                <li><a href="#">Add product</a></li>
-                                <li><a href="#">List product</a></li>
+                                <li><a href="product.html">Accessories</a></li>
+                                <li><a href="food.html">Food</a></li>
                             </ul>
                         </li>
 
@@ -353,10 +353,9 @@
                                 <li><a href="#">block user</a></li>
                             </ul>
                         </li>
+                        <li class="item"><i class="fa-solid fa-list"></i><a href="#cat-t" class="hp">Categories</a></li>
                         <li class="item"><i class="fa-solid fa-address-book"></i><a href="contact.html"
-                                class="hp">Contact</a></li>
-                        <li class="item"><i class="fa-solid fa-right-from-bracket"></i><a href="#" class="hp">Log
-                                out</a></li>
+                            class="hp">Contact</a></li>
 
 
                         <div id="action" class=""></div>
@@ -368,15 +367,16 @@
 
     <!-- form -->
     <div class="container-8">
-        <form>
+        <div class="form-login">
             <label for="username">Username:</label>
             <input type="text" id="username" placeholder="Username here..." />
             <label for="password">Password:</label>
             <input type="password" id="password" placeholder="Password here..." />
             <textarea name="How can we help you?" id="textarea" placeholder="How can we help you?"
                 class="contact-inputs"></textarea>
-            <button type="submit" id="submit" onclick="display()" onclick="validation()">Login</button>
-        </form>
+            <!-- <button type="submit" id="submit" onclick="display()" onclick="validation()">Login</button> -->
+            <button  onclick="displaylogin()">Login</button>
+        </div>
         <div class="ear-l"></div>
         <div class="ear-r"></div>
         <div class="panda-face">
@@ -401,8 +401,8 @@
     <footer>
         <div class="container_3 ">
             <div class="col">
-                <img src="" class="logo_2">
-                <h5>Designo</h5>
+                <img src="image/saylani-removebg-preview.png" class="logo_2">
+                <!-- <h5>Designo</h5> -->
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam eaque quod consequatur voluptate
                     beatae sit possimus minima eos illum, esse praesentium numquam labore cumque perspiciatis sequi
@@ -446,7 +446,7 @@
             </div>
         </div>
         <hr>
-        <p class="copyright"> Designo &#169 2024 - All Rights Reserved</p>
+        <p class="copyright"> SMIT &#169 2024 - All Rights Reserved</p>
     </footer>
 
 
@@ -469,6 +469,7 @@
         crossorigin="anonymous"></script>
     <script src="lightbox-plus-jquery.js"></script>
     <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 

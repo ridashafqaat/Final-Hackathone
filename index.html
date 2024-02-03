@@ -12,6 +12,9 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="lightbox.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
 </head>
 
 <body>
@@ -35,13 +38,13 @@
                         <li class="item active">
                             <i class="fa-solid fa-house-chimney"></i><a href="#" class="hp">Home</a>
                         </li>
-                        <li class="item"><i class="fa-solid fa-address-card"></i><a href="#" class="hp">About</a></li>
+                        <li class="item"><i class="fa-solid fa-address-card"></i><a href="#about-us" class="hp">About</a></li>
                         <li class="item">
                             <i class="fa-solid fa-shirt"><a href="#"></a></i>Products <i
                                 class="fa-solid fa-chevron-down"></i>
                             <ul>
-                                <li><a href="#">Add product</a></li>
-                                <li><a href="#">List product</a></li>
+                                <li><a href="product.html">Accessories</a></li>
+                                <li><a href="food.html">Food</a></li>
                             </ul>
                         </li>
 
@@ -54,8 +57,8 @@
                                 <li><a href="#">block user</a></li>
                             </ul>
                         </li>
+                        <li class="item"><i class="fa-solid fa-list"></i><a href="#cat-t" class="hp">Categories</a></li>
                         <li class="item"><i class="fa-solid fa-address-book"></i><a href="contact.html" class="hp">Contact</a></li>
-                        <li class="item"><i class="fa-solid fa-right-from-bracket"></i><a href="#" class="hp">Log out</a></li>
 
 
                         <div id="action" class=""></div>
@@ -80,11 +83,11 @@
         <!-- list item -->
         <div class="list">
             <div class="item">
-                <img src="image/img1.jpg">
+                <img src="image/s22.jpg">
                 <div class="content">
                     <div class="author">LUNDEV</div>
                     <div class="title">DESIGN SLIDER</div>
-                    <div class="topic">ANIMAL</div>
+                    <div class="topic">Food</div>
                     <div class="des">
                         <!-- lorem 50 -->
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima
@@ -99,11 +102,11 @@
                 </div>
             </div>
             <div class="item">
-                <img src="image/img2.jpg">
+                <img src="image/s44.jpg">
                 <div class="content">
                     <div class="author">LUNDEV</div>
                     <div class="title">DESIGN SLIDER</div>
-                    <div class="topic">ANIMAL</div>
+                    <div class="topic">Cofee</div>
                     <div class="des">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima
                         placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et
@@ -117,11 +120,11 @@
                 </div>
             </div>
             <div class="item">
-                <img src="image/img3.jpg">
+                <img src="image/s33.jpg">
                 <div class="content">
                     <div class="author">LUNDEV</div>
                     <div class="title">DESIGN SLIDER</div>
-                    <div class="topic">ANIMAL</div>
+                    <div class="topic">Food</div>
                     <div class="des">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima
                         placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et
@@ -135,11 +138,11 @@
                 </div>
             </div>
             <div class="item">
-                <img src="image/img4.jpg">
+                <img src="image/s66.jpg">
                 <div class="content">
                     <div class="author">LUNDEV</div>
                     <div class="title">DESIGN SLIDER</div>
-                    <div class="topic">ANIMAL</div>
+                    <div class="topic">Food</div>
                     <div class="des">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima
                         placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et
@@ -156,7 +159,7 @@
         <!-- list thumnail -->
         <div class="thumbnail">
             <div class="item">
-                <img src="image/img1.jpg">
+                <img src="image/s22.jpg">
                 <div class="content">
                     <div class="title">
                         Name Slider
@@ -167,7 +170,7 @@
                 </div>
             </div>
             <div class="item">
-                <img src="image/img2.jpg">
+                <img src="image/s44.jpg">
                 <div class="content">
                     <div class="title">
                         Name Slider
@@ -178,7 +181,7 @@
                 </div>
             </div>
             <div class="item">
-                <img src="image/img3.jpg">
+                <img src="image/s33.jpg">
                 <div class="content">
                     <div class="title">
                         Name Slider
@@ -189,7 +192,7 @@
                 </div>
             </div>
             <div class="item">
-                <img src="image/img4.jpg">
+                <img src="image/s66.jpg">
                 <div class="content">
                     <div class="title">
                         Name Slider
@@ -216,8 +219,173 @@
         <div class="time"></div>
     </div>
 
-    <!-- carousal 2 -->
-    <div class="big-con">
+    <section id="features" class="my-5 pb-5">
+        <div class="container text-center ">
+          <h3>Our Featured</h3>
+          <!-- <hr class="mx-auto"> -->
+          <p>Here you can check out our new products with fair price on SMIT.</p>
+        </div><br>
+        <div class="row mx-auto container-fluid">
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="image/pexels-photo-1199957.jpeg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Food</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="image/pexels-photo-1633525.jpeg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Food</h5>
+            <h4 class="p-price">$95.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="image/pexels-photo-1410235.jpeg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Food</h5>
+            <h4 class="p-price">$82.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="image/pexels-photo-842571.webp" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Food</h5>
+            <h4 class="p-price">$72.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="container text-center ">
+        <h3 id="about-us">About Us</h3>
+      </div>
+
+
+
+
+      <!-- section-3 about-->
+   <section id="about">
+    <div class="about-section wrapper">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
+            <div class="card border-0">
+              <img decoding="async" src="image/img-333.png" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12 text-sec">
+           <h2>We pride ourselves on making real food from the best ingredients.</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum in sit
+             amet leo. Mauris feugiat erat tellus.</p>
+             <button class="main-btn mt-4">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <div class="container food-type">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
+           <h2>We make everything by hand with the best possible ingredients.</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum in sit
+             amet leo. Mauris feugiat erat tellus.Far far away, behind the word mountains, far from the countries
+             Vokalia and Consonantia, there live the blind texts.</p>
+           <ul class="list-unstyled py-3">
+             <li>Etiam sed dolor ac diam volutpat.</li>
+             <li>Erat volutpat aliquet imperdiet.</li>
+             <li>purus a odio finibus bibendum.</li>
+           </ul> 
+           <button class="main-btn mt-4">Learn More</button>
+          </div>
+          <div class="col-lg-7 col-md-12">
+            <div class="card border-0">
+              <img decoding="async" src="image/img-222 (1).png" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><br><br><br>
+
+  <!-- categories -->
+
+  <!-- <div id="cat-t">
+    <h3>Categories</h3>
+  </div> -->
+
+  <div id="cat-t" class="event-gallery">
+    <div class="fw-bold ">
+      <h1 class="text-center fw-bold swiper-h1 ">Categories</h1>
+    </div>
+    <div class="event-gallery2">
+      <div class="card-gallery">
+        <div class="face face1">
+          <div class="content">
+            <h2>Category One</h2><br>
+            <p>Lorem ipsum dolor sit amet consectetur, elit.</p><br><br>
+            <a href="#">VIEW GALLERY</a>
+          </div>
+        </div>
+        <div class="face face2">
+          <!-- <h2>01</h2> -->
+        </div>
+      </div>
+
+      <div class="card-gallery">
+        <div class="face face1">
+          <div class="content">
+            <h2>Category Two</h2><br>
+            <p>Lorem ipsum dolor sit amet consectetur, elit.</p><br><br>
+            <a href="#">VIEW GALLERY</a>
+          </div>
+        </div>
+        <div class="face face2 face3">
+          <!-- <h2>02</h2> -->
+        </div>
+      </div>
+
+      <div class="card-gallery">
+        <div class="face face1">
+          <div class="content">
+            <h2>Category Three</h2><br>
+            <p>Lorem ipsum dolor sit amet consectetur, elit.</p><br><br>
+            <a href="#">VIEW GALLERY</a>
+          </div>
+        </div>
+        <div class="face face2 face4">
+          <!-- <h2>03</h2> -->
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+
+
+    <!-- <div class="big-con">
         <div class="container-9">
             <div class="slider-wrapper">
                 <button id="prev-slide" class="slide-button material-symbols-rounded">
@@ -245,14 +413,18 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    
+    
+    
 
     <!-- footer -->
     <footer>
         <div class="container_3 ">
             <div class="col">
-                <img src="" class="logo_2">
-                <h5>Designo</h5>
+                <img src="image/saylani-removebg-preview.png" class="logo_2">
+                <!-- <h5>Designo</h5> -->
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam eaque quod consequatur voluptate
                     beatae sit possimus minima eos illum, esse praesentium numquam labore cumque perspiciatis sequi
@@ -293,8 +465,12 @@
             </div>
         </div>
         <hr>
-        <p class="copyright"> Designo &#169 2024 - All Rights Reserved</p>
+        <p class="copyright"> SMIT &#169 2024 - All Rights Reserved</p>
     </footer>
+
+
+
+
 
 
 
@@ -311,6 +487,9 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
         <script src="lightbox-plus-jquery.js"></script>
+
+        
+
 
 </body>
 

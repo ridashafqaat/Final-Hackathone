@@ -121,25 +121,49 @@ document.addEventListener("click", (e) => {
 });
 
 
-// form alert code
-function display() {
 
-    if (document.getElementById("username").value == "") {
-        alert("please enter your name");
-        return false;
-    } else if (document.getElementById("password").value == "") {
-        alert("please enter your password");
-        return false;
+// form alert code
+function displaylogin() {
+    var username=document.getElementById("username")
+    var userpassword=document.getElementById("password")
+
+
+    if (username.value == "") {
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Enter Your Email",
+          });
+        
+    } else if (userpassword.value == "") {
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Enter Your password",
+          });
+        // alert("please enter your password");
+        
     } else {
-        validation()
+        Swal.fire({
+            title: "USER",
+            text: "Login succesfully ",
+            icon: "success"
+          });
+          setTimeout(()=>{
+            window.location.href = "./index.html"
+          },3000)
+         
     }
 }
 
-function validation() {
-    swal("Good job!", "You clicked the button!", "success")
-}
+// function validation() {
+//     swal("Good job!", "You clicked the button!", "success")
+// }
 
-
+// submitBtn.addEventListener('click',()=>{
+//     display();
+//     validation();
+// })
 
 // loader
 // var loader = document.getElementById("pre_loader");
