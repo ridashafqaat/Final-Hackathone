@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css">
+    <style>
+        body {
+            background-color: orange;
+        }
+
+        .container-8 {
+            height: 33.25em;
+            width: 31.25em;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+
+        .container-8 form {
+            width: 23.75em;
+            height: 20.75em;
+            background-color: #ffffff;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: calc(50% + 3.1em);
+            left: 50%;
+            padding: 0 3.1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 0.5em;
+        }
+
+        .container-8 form label {
+            display: block;
+            margin-bottom: 0.2em;
+            font-weight: 600;
+            color: #2e0d30;
+        }
+
+        .container-8 form input {
+            font-size: 0.95em;
+            font-weight: 400;
+            color: #3f3554;
+            padding: 0.3em;
+            border: none;
+            border-bottom: 0.12em solid #3f3554;
+            outline: none;
+        }
+
+        form textarea {
+            font-size: 0.95em;
+            font-weight: 400;
+            color: #3f3554;
+            padding: 0.3em;
+            border: none;
+            border-bottom: 0.12em solid #3f3554;
+            outline: none;
+        }
+
+        form textarea:focus {
+            border-color: #f4c531;
+        }
+
+
+        form input:focus {
+            border-color: #f4c531;
+        }
+
+        form input:not(:last-child) {
+            margin-bottom: 0.9em;
+        }
+
+        form button {
+            font-size: 0.95em;
+            padding: 0.8em 0;
+            border-radius: 2em;
+            border: none;
+            outline: none;
+            background-color: #f4c531;
+            color: #2e0d30;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            margin-top: 0.8em;
+        }
+
+        .panda-face {
+            height: 7.5em;
+            width: 8.4em;
+            background-color: #ffffff;
+            border: 0.18em solid #2e0d30;
+            border-radius: 7.5em 7.5em 5.62em 5.62em;
+            position: absolute;
+            top: 2em;
+            margin: auto;
+            left: 0;
+            right: 0;
+        }
+
+        .ear-l,
+        .ear-r {
+            background-color: #3f3554;
+            height: 2.5em;
+            width: 2.81em;
+            border: 0.18em solid #2e0d30;
+            border-radius: 2.5em 2.5em 0 0;
+            top: 1.75em;
+            position: absolute;
+        }
+
+        .ear-l {
+            transform: rotate(-38deg);
+            left: 10.75em;
+        }
+
+        .ear-r {
+            transform: rotate(38deg);
+            right: 10.75em;
+        }
+
+        .blush-l,
+        .blush-r {
+            background-color: #ff8bb1;
+            height: 1em;
+            width: 1.37em;
+            border-radius: 50%;
+            position: absolute;
+            top: 4em;
+        }
+
+        .blush-l {
+            transform: rotate(25deg);
+            left: 1em;
+        }
+
+        .blush-r {
+            transform: rotate(-25deg);
+            right: 1em;
+        }
+
+        .eye-l,
+        .eye-r {
+            background-color: #3f3554;
+            height: 2.18em;
+            width: 2em;
+            border-radius: 2em;
+            position: absolute;
+            top: 2.18em;
+        }
+
+        .eye-l {
+            left: 1.37em;
+            transform: rotate(-20deg);
+        }
+
+        .eye-r {
+            right: 1.37em;
+            transform: rotate(20deg);
+        }
+
+        .eyeball-l,
+        .eyeball-r {
+            height: 0.6em;
+            width: 0.6em;
+            background-color: #ffffff;
+            border-radius: 50%;
+            position: absolute;
+            left: 0.6em;
+            top: 0.6em;
+            transition: 1s all;
+        }
+
+        .eyeball-l {
+            transform: rotate(20deg);
+        }
+
+        .eyeball-r {
+            transform: rotate(-20deg);
+        }
+
+        .nose {
+            height: 1em;
+            width: 1em;
+            background-color: #3f3554;
+            position: absolute;
+            top: 4.37em;
+            margin: auto;
+            left: 0;
+            right: 0;
+            border-radius: 1.2em 0 0 0.25em;
+            transform: rotate(45deg);
+        }
+
+        .nose:before {
+            content: "";
+            position: absolute;
+            background-color: #3f3554;
+            height: 0.6em;
+            width: 0.1em;
+            transform: rotate(-45deg);
+            top: 0.75em;
+            left: 1em;
+        }
+
+        .mouth,
+        .mouth:before {
+            height: 0.75em;
+            width: 0.93em;
+            background-color: transparent;
+            position: absolute;
+            border-radius: 50%;
+            box-shadow: 0 0.18em #3f3554;
+        }
+
+        .mouth {
+            top: 5.31em;
+            left: 3.12em;
+        }
+
+        .mouth:before {
+            content: "";
+            position: absolute;
+            left: 0.87em;
+        }
+
+        .hand-l,
+        .hand-r {
+            background-color: #3f3554;
+            height: 2.81em;
+            width: 2.5em;
+            border: 0.18em solid #2e0d30;
+            border-radius: 0.6em 0.6em 2.18em 2.18em;
+            transition: 1s all;
+            position: absolute;
+            top: 8.4em;
+        }
+
+        .hand-l {
+            left: 7.5em;
+        }
+
+        .hand-r {
+            right: 7.5em;
+        }
+
+        .paw-l,
+        .paw-r {
+            background-color: #3f3554;
+            height: 3.12em;
+            width: 3.12em;
+            border: 0.18em solid #2e0d30;
+            border-radius: 2.5em 2.5em 1.2em 1.2em;
+            position: absolute;
+            top: 28.56em;
+        }
+
+        .paw-l {
+            left: 10em;
+        }
+
+        .paw-r {
+            right: 10em;
+        }
+
+        .paw-l:before,
+        .paw-r:before {
+            position: absolute;
+            content: "";
+            background-color: #ffffff;
+            height: 1.37em;
+            width: 1.75em;
+            top: 1.12em;
+            left: 0.55em;
+            border-radius: 1.56em 1.56em 0.6em 0.6em;
+        }
+
+        .paw-l:after,
+        .paw-r:after {
+            position: absolute;
+            content: "";
+            background-color: #ffffff;
+            height: 0.5em;
+            width: 0.5em;
+            border-radius: 50%;
+            top: 0.31em;
+            left: 1.12em;
+            box-shadow: 0.87em 0.37em #ffffff, -0.87em 0.37em #ffffff;
+        }
+
+        @media screen and (max-width: 500px) {
+            .container {
+                font-size: 14px;
+            }
+        }
+        footer{
+            position: absolute;
+            top: 650px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--  loader -->
+    <!-- <div id="pre_loader"></div> -->
+
+    <div class="scrollTop" onclick="scrollToTop();"></div>
+
+
+    <!-- sidebar nevigation -->
+    <div class="menu_box">
+        <div class="menu_icon_box">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="imp">
+            <div id="main_menue" class="main_menu">
+                <div class="menu"><br><br><br>
+                    <ul>
+                        <li class="item active">
+                            <i class="fa-solid fa-house-chimney"></i><a href="index.html" class="hp">Home</a>
+                        </li>
+                        <li class="item"><i class="fa-solid fa-address-card"></i><a href="#" class="hp">About</a></li>
+                        <li class="item">
+                            <i class="fa-solid fa-shirt"><a href="#"></a></i>Products <i
+                                class="fa-solid fa-chevron-down"></i>
+                            <ul>
+                                <li><a href="#">Add product</a></li>
+                                <li><a href="#">List product</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="item">
+                            <i class="fa-solid fa-user"><a href="#"></a></i>Users <i
+                                class="fa-solid fa-chevron-down"></i>
+                            <ul>
+                                <li><a href="#">Add user</a></li>
+                                <li><a href="#">List user</a></li>
+                                <li><a href="#">block user</a></li>
+                            </ul>
+                        </li>
+                        <li class="item"><i class="fa-solid fa-address-book"></i><a href="contact.html"
+                                class="hp">Contact</a></li>
+                        <li class="item"><i class="fa-solid fa-right-from-bracket"></i><a href="#" class="hp">Log
+                                out</a></li>
+
+
+                        <div id="action" class=""></div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- form -->
+    <div class="container-8">
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Username here..." />
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Password here..." />
+            <textarea name="How can we help you?" id="textarea" placeholder="How can we help you?"
+                class="contact-inputs"></textarea>
+            <button type="submit" id="submit" onclick="display()" onclick="validation()">Login</button>
+        </form>
+        <div class="ear-l"></div>
+        <div class="ear-r"></div>
+        <div class="panda-face">
+            <div class="blush-l"></div>
+            <div class="blush-r"></div>
+            <div class="eye-l">
+                <div class="eyeball-l"></div>
+            </div>
+            <div class="eye-r">
+                <div class="eyeball-r"></div>
+            </div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+        </div>
+        <div class="hand-l"></div>
+        <div class="hand-r"></div>
+        <div class="paw-l"></div>
+        <div class="paw-r"></div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container_3 ">
+            <div class="col">
+                <img src="" class="logo_2">
+                <h5>Designo</h5>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam eaque quod consequatur voluptate
+                    beatae sit possimus minima eos illum, esse praesentium numquam labore cumque perspiciatis sequi
+                    pariatur? Pariatur, vel amet.
+                </p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div>
+                </h3>
+                <p>ytghhfd</p>
+                <p>hhhhhhhhhhhfdsddcf</p>
+                <p>hhtejdydhydrhfy</p>
+                <p class="email-id">rida@outlook.com</p>
+                <h5>+91-22 33333</h5>
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div>
+                </h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></div>
+                </h3>
+                <form class="form_2">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email id" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"> Designo &#169 2024 - All Rights Reserved</p>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="contact.js"></script>
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="lightbox-plus-jquery.js"></script>
+    <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+
+
+
+
+</body>
+
+</html>

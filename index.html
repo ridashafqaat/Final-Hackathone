@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rida Assignment</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
+</head>
+
+<body>
+
+    <div class="scrollTop" onclick="scrollToTop();"></div>
+
+    <!--  loader -->
+    <div id="pre_loader"></div>
+
+    <!-- sidebar nevigation -->
+    <div class="menu_box">
+        <div class="menu_icon_box">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="imp">
+            <div id="main_menue" class="main_menu">
+                <div class="menu"><br><br><br>
+                    <ul>
+                        <li class="item active">
+                            <i class="fa-solid fa-house-chimney"></i><a href="#" class="hp">Home</a>
+                        </li>
+                        <li class="item"><i class="fa-solid fa-address-card"></i><a href="#" class="hp">About</a></li>
+                        <li class="item">
+                            <i class="fa-solid fa-shirt"><a href="#"></a></i>Products <i
+                                class="fa-solid fa-chevron-down"></i>
+                            <ul>
+                                <li><a href="#">Add product</a></li>
+                                <li><a href="#">List product</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="item">
+                            <i class="fa-solid fa-user"><a href="#"></a></i>Users <i
+                                class="fa-solid fa-chevron-down"></i>
+                            <ul>
+                                <li><a href="#">Add user</a></li>
+                                <li><a href="#">List user</a></li>
+                                <li><a href="#">block user</a></li>
+                            </ul>
+                        </li>
+                        <li class="item"><i class="fa-solid fa-address-book"></i><a href="contact.html" class="hp">Contact</a></li>
+                        <li class="item"><i class="fa-solid fa-right-from-bracket"></i><a href="#" class="hp">Log out</a></li>
+
+
+                        <div id="action" class=""></div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- search box -->
+    <div class="search_box">
+        <input type="text" placeholder="Search..." id="mysearch" onkeyup="search()">
+        <a href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+    </div>
+
+    <header></header>
+
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="image/img1.jpg">
+                <div class="content">
+                    <div class="author">LUNDEV</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">ANIMAL</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima
+                        placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et
+                        quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at
+                        laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img2.jpg">
+                <div class="content">
+                    <div class="author">LUNDEV</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">ANIMAL</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima
+                        placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et
+                        quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at
+                        laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    <div class="author">LUNDEV</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">ANIMAL</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima
+                        placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et
+                        quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at
+                        laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    <div class="author">LUNDEV</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">ANIMAL</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima
+                        placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et
+                        quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at
+                        laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="image/img1.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img2.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <!-- <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div> -->
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+    <!-- carousal 2 -->
+    <div class="big-con">
+        <div class="container-9">
+            <div class="slider-wrapper">
+                <button id="prev-slide" class="slide-button material-symbols-rounded">
+                    chevron_left
+                </button>
+                <ul class="image-list">
+                    <img class="image-item" src="image/img-1.jpg" alt="img-1" />
+                    <img class="image-item" src="image/img-2.jpg" alt="img-2" />
+                    <img class="image-item" src="image/img-3.jpg" alt="img-3" />
+                    <img class="image-item" src="image/img-4.jpg" alt="img-4" />
+                    <img class="image-item" src="image/img-5.jpg" alt="img-5" />
+                    <img class="image-item" src="image/img-6.jpg" alt="img-6" />
+                    <img class="image-item" src="image/img-7.jpg" alt="img-7" />
+                    <img class="image-item" src="image/img-8.jpg" alt="img-8" />
+                    <img class="image-item" src="image/img-9.jpg" alt="img-9" />
+                    <img class="image-item" src="image/img-10.jpg" alt="img-10" />
+                </ul>
+                <button id="next-slide" class="slide-button material-symbols-rounded">
+                    chevron_right
+                </button>
+            </div>
+            <div class="slider-scrollbar">
+                <div class="scrollbar-track">
+                    <div class="scrollbar-thumb"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container_3 ">
+            <div class="col">
+                <img src="" class="logo_2">
+                <h5>Designo</h5>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam eaque quod consequatur voluptate
+                    beatae sit possimus minima eos illum, esse praesentium numquam labore cumque perspiciatis sequi
+                    pariatur? Pariatur, vel amet.
+                </p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div></h3>
+                <p>ytghhfd</p>
+                <p>hhhhhhhhhhhfdsddcf</p>
+                <p>hhtejdydhydrhfy</p>
+                <p class="email-id">rida@outlook.com</p>
+                <h5>+91-22 33333</h5>
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></div></h3>
+                <form class="form_2">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email id" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"> Designo &#169 2024 - All Rights Reserved</p>
+    </footer>
+
+
+
+
+    <script src="practice.js"></script>
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+        <script src="lightbox-plus-jquery.js"></script>
+
+</body>
+
+</html>
