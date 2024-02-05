@@ -1048,12 +1048,9 @@ hr {
     margin-bottom: 2rem;
 }
 #features p{
-<<<<<<< HEAD
     color: #000;
 }
-=======
-    color:black;
->>>>>>> 8cf1400b67f814d49274839003a2f8e5ca9556b6
+
 .product img {
     transition: 0.3s all;
     height: 350px;
