@@ -51,7 +51,7 @@ menu_icon_box.onclick = function () {
 
 
 
-
+//  form
 
 let usernameRef = document.getElementById("username");
 let passwordRef = document.getElementById("password");
@@ -140,9 +140,7 @@ function displaylogin() {
             icon: "error",
             title: "Oops...",
             text: "Enter Your password",
-          });
-        // alert("please enter your password");
-        
+          });        
     } else {
         Swal.fire({
             title: "USER",
@@ -156,14 +154,6 @@ function displaylogin() {
     }
 }
 
-// function validation() {
-//     swal("Good job!", "You clicked the button!", "success")
-// }
-
-// submitBtn.addEventListener('click',()=>{
-//     display();
-//     validation();
-// })
 
 // loader
 // var loader = document.getElementById("pre_loader");
