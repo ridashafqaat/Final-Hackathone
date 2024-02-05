@@ -1047,10 +1047,13 @@ hr {
     cursor: pointer;
     margin-bottom: 2rem;
 }
+<<<<<<< HEAD
 #features p{
     color: #000;
 }
 
+=======
+>>>>>>> c7f23d0ee7dac8222589cc42625bb8d53c81c9d1
 .product img {
     transition: 0.3s all;
     height: 350px;
